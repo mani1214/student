@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication22.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="Table" Width="100%">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/HallTicket.aspx" Text="HallTicket Number" Value="HallTicket Number"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AdminLogin.aspx" Text="AdminLogin" Value="New Item"></asp:MenuItem>
+                    <asp:MenuItem Text="Contact" Value="New Item"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="auto-style1">
+                <br />
+                <a href="mailto:CopyRights@Info">CopyRights@Info</a><br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
